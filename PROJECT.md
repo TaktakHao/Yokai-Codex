@@ -15,7 +15,10 @@
 | 3 | M3: 洞府“打黑工”放置系统与存盘 | `HomeManager.ts`, `SaveManager.ts` | M2 | DONE |
 | 4 | M4: 全链路系统整合与防作弊测试 | 静态代码编译校验与功能单元整合 | M3 | DONE |
 | 5 | M5: 剧情对话与局内暂停系统 | `DialoguePanel.ts`, `PausePanel.ts`, `DialogueSystem.ts` | M4 | DONE |
-| 6 | M6: 多关卡进度与剧情对话波次扩展 | `LevelManager.ts`, `Chapter1_Dialogues.json` 等 | M5 | TODO |
+| 6 | M6: 多关卡进度与剧情对话波次扩展 | `LevelManager.ts`, `Chapter1_Dialogues.json` 等 | M5 | DONE |
+| 7 | M7: 核心视觉风格“国风水墨”重构 | `VisualLoader.ts` 等全局 UI 及渲染层 | M6 | DONE |
+| 8 | M8: 割草手感打磨与阻尼摄像机跟随 | `PlayerController.ts` 等操作模块 | M6 | DONE |
+| 9 | M9: 战斗反馈（震屏/顿帧/闪白） | `Enemy.ts`, `GameManager.ts` 等机制层 | M7, M8 | DONE |
 
 ## Code Layout
 - `assets/`

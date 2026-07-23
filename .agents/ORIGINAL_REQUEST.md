@@ -36,3 +36,33 @@
 ### 结算与系统鲁棒性
 - [ ] 关卡正常通关后，弹出 VictoryPanel 且玩家灵石与材料数据增加，点击“返回洞府”能安全切回主界面。
 - [ ] 游戏在运行期间，控制台不得出现任何未捕获的 NullPointerError、TypeError 或渲染中断报错。
+
+## Follow-up — 2026-07-22T10:06:09Z
+
+# 团队协作项目 Prompt
+
+项目描述：为《万妖录：躺平修仙》第一关卡重新设计并替换简约、可爱风格的游戏美术资源（包含主角、背景、Boss及5种小怪）。在生成资源前需制定详细的美术风格与方案，并将其文档化以便后续关卡复用，最后将处理好的透明通道图片自动导入游戏工程中。
+
+Working directory: `/Users/wesson/YokaiCodex`
+Integrity mode: development
+
+## 需求 (Requirements)
+
+### R1. 美术风格定义与文档化
+在执行图片生成前，明确“简约、可爱”风格的具体表现（如色彩饱和度、角色头身比、线条特征）。并将该美术规范详细输出并保存到 `Design/Art_Style_Guide.md` 文件中，作为本项目的统一标准。
+
+### R2. 批量生成第一关卡美术素材
+按照 R1 制定的标准，统一生成第一关的所有图像资产，包括：1个主角、1张无缝草地背景、1个 Boss（千年树妖），以及 5 种小怪。
+
+### R3. 图片后处理与工程导入
+编写或修改图像处理脚本（例如使用 Python 的 Pillow 库），将生成的人物/怪物图片的白色背景抠除（转换为含透明通道的 PNG），并将背景图缩放至合适尺寸，最后精准覆盖到工程对应的 `assets/resources/Textures/` 各个子目录下。
+
+## 验收标准 (Acceptance Criteria)
+
+### 文档验收
+- [ ] 存在 `Design/Art_Style_Guide.md` 文件，且内容包含了对于颜色、构图和可爱风格的具体描述指南。
+
+### 资产覆盖与透明度校验
+- [ ] `assets/resources/Textures/Player/` 及 `assets/resources/Textures/Enemies/` 目录下的所有原怪物/主角素材文件已被全部替换/修改。
+- [ ] 所有的角色/怪物图片文件均为包含 Alpha 透明通道的 `.png` 格式（非纯正方形白底）。
+- [ ] `assets/resources/Textures/bg_grassland.png` 文件已被替换并适配游戏尺寸。

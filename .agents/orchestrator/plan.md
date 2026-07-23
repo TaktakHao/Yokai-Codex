@@ -1,30 +1,22 @@
-# Orchestration Plan: 《万妖录：躺平修仙》第一关完全闭环开发
+# Orchestration Plan: 《万妖录：躺平修仙》第一关“简约可爱风”美术资源重构与替换
 
 ## 任务目标
-解决《万妖录：躺平修仙》第一关“青云山外围”的全部体验缺陷与报错，实现第一关从开局剧情、战斗追逐、浮动伤害/受击闪红、宠物跟随/葫芦抓捕/剧情冻结，到全链路结算（Victory/GameOver）与防崩溃占位图的完全闭环。
+完成《万妖录：躺平修仙》第一关美术风格规范定义、素材生成、抠图/后处理转透明 RGBA PNG 以及工程导入，替换 `assets/resources/Textures/` 对应子目录素材，并通过全流程审评与诚信审计。
 
 ## 编排架构 (Project Pattern)
 
-### 阶段 0: 全局探索与代码基线分析 (Exploration Phase)
-- 调度 `teamwork_preview_explorer` 探查项目整体架构、目录结构、Cocos Creator TypeScript 脚本关联关系、当前体验缺陷与报错隐患。
+### 阶段 0: 资源映射与代码依赖探查 (Exploration Phase)
+- 调度 `teamwork_preview_explorer` 探查现有的 `assets/resources/Textures/` 目录结构、图片尺寸、Alpha 通道状态以及代码/预制体中对各贴图资源的直接依赖关系。
 
-### 阶段 1: 核心 Milestone 划分与并行推进
-- **Milestone 1 (M1 - R1 战斗/索敌/打击感闭环)**:
-  - 怪物追逐玩家逻辑修复。
-  - 自动索敌与最邻近怪物射击机制校验。
-  - 受击红色闪烁特效 (`EffectManager.ts`) 与头顶红色浮动伤害数字弹出。
-- **Milestone 2 (M2 - R2 宠物/抓捕/剧情冻结联动)**:
-  - 宠物弹性平滑插值跟随、多宠物环形偏置算法、投射物飞弹颜色/大小挂钩星级化形。
-  - 葫芦抓捕逻辑（10%残血捕捉概率计算、摧毁怪物、同步盲盒蛋道具、触发剧情）。
-  - 剧情对话 (`DialoguePanel.ts`) 弹出期间战斗逻辑防御性“冻结”与关闭后完美恢复。
-- **Milestone 3 (M3 - R3 结算/防崩溃占位图/资源加载)**:
-  - 关卡胜利通关 (`VictoryPanel.ts` 灵石/材料结算) 与失败 (`GameOverPanel.ts`)，点击返回彻底重置与安全切回洞府。
-  - 动态资源加载防御性补全（贴图缺失或加载缓慢时采用白色占位图并着色渲染，防卡死）。
-- **Milestone 4 (E2E Track - 端到端测试与质量验证)**:
-  - 建立 4-Tier 完整 E2E 验证用例与自动化测试基线。
+### 阶段 1: 美术风格制定 (M_ART_1)
+- 调度 Worker / Explorer 制定“简约、可爱”风格的具体规范（色彩饱和度、角色头身比、线条特征、美术指南），输出至 `Design/Art_Style_Guide.md`。
 
-### 阶段 2: 迭代循环 (Explorer -> Worker -> Reviewer -> Challenger -> Auditor)
-对每个 Milestone 执行严格质量门禁控制。
+### 阶段 2: 美术素材生成与后处理导入 (M_ART_2 & M_ART_3)
+- 调度 `teamwork_preview_worker` 批量生成 1 个主角、1 张无缝草地背景 `bg_grassland.png`、1 个 Boss 千年树妖、5 种小怪素材。
+- 编写/运行 Python 脚本（Pillow 库）对角色与怪物素材进行白色背景自动抠除，转换为 RGBA 透明通道 PNG；对草地背景进行缩放适配，并精准覆盖 `assets/resources/Textures/` 对应路径。
 
-### 阶段 3: 最终闭环验收与 Sentinel 汇报
-全面验证 Acceptance Criteria 的所有 checklist 条目，无报错无遗漏，最终交付。
+### 阶段 3: 严格评审、测试与防作弊取证审计 (M_ART_4)
+- 调度 `teamwork_preview_reviewer` 进行文件规范与贴图参数（RGBA、Alpha 通道、尺寸）独立审查。
+- 调度 `teamwork_preview_challenger` 编写脚本检测所有 PNG 像素透明度与边界。
+- 调度 `teamwork_preview_auditor` 执行取证诚信审计，确保真实替换且无假白底/硬编码作弊。
+- 门禁全通后生成 `victory_report.md` 并向 Parent Sentinel 汇报。

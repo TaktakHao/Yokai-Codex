@@ -1,0 +1,97 @@
+=== 深度分析 /Users/wesson/YokaiCodex/assets/resources/Textures 下的所有图片 ===
+
+[bg_grassland.png] Size: 9681B | Dim: 720x1280 | Mode: RGB
+  Alpha: NO ALPHA CHANNEL
+  Status: Non-RGBA
+
+[UI/background.png] Size: 1796602B | Dim: 768x1376 | Mode: RGB
+  Alpha: NO ALPHA CHANNEL
+  Status: Non-RGBA
+
+[UI/white.png] Size: 68B | Dim: 1x1 | Mode: LA
+  Alpha: NO ALPHA CHANNEL
+  Status: Non-RGBA
+
+[Enemies/boss_1.png] Size: 26353B | Dim: 256x256 | Mode: RGBA
+  Alpha 0 (Transparent): 27337 (41.7%)
+  Alpha 255 (Opaque): 35372 (54.0%)
+  Alpha Mid (Translucent/Smooth): 2827 (4.3%)
+  Avg RGB (Non-transparent): (75.2, 139.1, 65.0)
+  Status: OK
+
+[Enemies/boss_millennium_tree_demon.png] Size: 26353B | Dim: 256x256 | Mode: RGBA
+  Alpha 0 (Transparent): 27337 (41.7%)
+  Alpha 255 (Opaque): 35372 (54.0%)
+  Alpha Mid (Translucent/Smooth): 2827 (4.3%)
+  Avg RGB (Non-transparent): (75.2, 139.1, 65.0)
+  Status: OK
+
+[Enemies/elite_gale_wolf_alpha.png] Size: 10006B | Dim: 150x150 | Mode: RGBA
+  Alpha 0 (Transparent): 17405 (77.4%)
+  Alpha 255 (Opaque): 3927 (17.5%)
+  Alpha Mid (Translucent/Smooth): 1168 (5.2%)
+  Avg RGB (Non-transparent): (118.0, 169.9, 237.9)
+  Status: OK
+
+[Enemies/elite_grass_brute.png] Size: 11445B | Dim: 140x140 | Mode: RGBA
+  Alpha 0 (Transparent): 11418 (58.3%)
+  Alpha 255 (Opaque): 6838 (34.9%)
+  Alpha Mid (Translucent/Smooth): 1344 (6.9%)
+  Avg RGB (Non-transparent): (65.0, 167.0, 89.6)
+  Status: OK
+
+[Enemies/elite_wood_golem.png] Size: 4787B | Dim: 160x160 | Mode: RGBA
+  Alpha 0 (Transparent): 14324 (56.0%)
+  Alpha 255 (Opaque): 9848 (38.5%)
+  Alpha Mid (Translucent/Smooth): 1428 (5.6%)
+  Avg RGB (Non-transparent): (133.0, 74.8, 16.4)
+  Status: OK
+
+[Enemies/mob_gale_wolf.png] Size: 8120B | Dim: 100x100 | Mode: RGBA
+  Alpha 0 (Transparent): 5733 (57.3%)
+  Alpha 255 (Opaque): 3347 (33.5%)
+  Alpha Mid (Translucent/Smooth): 920 (9.2%)
+  Avg RGB (Non-transparent): (132.9, 176.2, 238.0)
+  Status: OK
+
+[Enemies/mob_grass_sprite.png] Size: 6825B | Dim: 80x80 | Mode: RGBA
+  Alpha 0 (Transparent): 3120 (48.8%)
+  Alpha 255 (Opaque): 2602 (40.7%)
+  Alpha Mid (Translucent/Smooth): 678 (10.6%)
+  Avg RGB (Non-transparent): (69.5, 184.5, 107.8)
+  Status: OK
+
+[Enemies/mob_venom_snake.png] Size: 7615B | Dim: 100x100 | Mode: RGBA
+  Alpha 0 (Transparent): 6162 (61.6%)
+  Alpha 255 (Opaque): 2678 (26.8%)
+  Alpha Mid (Translucent/Smooth): 1160 (11.6%)
+  Avg RGB (Non-transparent): (181.8, 121.3, 232.3)
+  Status: OK
+
+[Enemies/mob_wood_spirit.png] Size: 5764B | Dim: 90x90 | Mode: RGBA
+  Alpha 0 (Transparent): 3451 (42.6%)
+  Alpha 255 (Opaque): 3801 (46.9%)
+  Alpha Mid (Translucent/Smooth): 848 (10.5%)
+  Avg RGB (Non-transparent): (174.4, 114.5, 21.5)
+  Status: OK
+
+[Enemies/monster_1.png] Size: 6910B | Dim: 100x100 | Mode: RGBA
+  Alpha 0 (Transparent): 6720 (67.2%)
+  Alpha 255 (Opaque): 2602 (26.0%)
+  Alpha Mid (Translucent/Smooth): 678 (6.8%)
+  Avg RGB (Non-transparent): (69.5, 184.5, 107.8)
+  Status: OK
+
+[Enemies/monster_2.png] Size: 7615B | Dim: 100x100 | Mode: RGBA
+  Alpha 0 (Transparent): 6162 (61.6%)
+  Alpha 255 (Opaque): 2678 (26.8%)
+  Alpha Mid (Translucent/Smooth): 1160 (11.6%)
+  Avg RGB (Non-transparent): (181.8, 121.3, 232.3)
+  Status: OK
+
+[Player/player.png] Size: 25474B | Dim: 256x256 | Mode: RGBA
+  Alpha 0 (Transparent): 43357 (66.2%)
+  Alpha 255 (Opaque): 19141 (29.2%)
+  Alpha Mid (Translucent/Smooth): 3038 (4.6%)
+  Avg RGB (Non-transparent): (116.1, 129.2, 137.3)
+  Status: OK

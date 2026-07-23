@@ -1,16 +1,21 @@
-# Progress Tracking
-
-Last visited: 2026-07-22T14:54:09+08:00
+## Current Status
+Last visited: 2026-07-22T18:15:45+08:00
 
 ## Iteration Status
-Current iteration: 6 / 32
+Current iteration: 1 / 32
 
-## Milestone Progress
-- [x] M0: 项目结构探索与缺陷现状分析 (Explorer 1 完成)
-- [x] M1: R1 战斗/索敌/打击感闭环 (Worker 1 修复受击红闪/伤害飘字，Worker 2 修复 BOSS Tint/Scale，Reviewer 1&2 APPROVE，Challenger 1 PASS)
-- [x] M2: R2 宠物/抓捕/剧情冻结联动 (Worker 1 修复，Reviewer 1&2 APPROVE，Challenger 2 PASS)
-- [x] M3: R3 结算/防崩溃占位图/资源加载 (Reviewer 1&2 APPROVE，Challenger 2 PASS)
-- [x] M4: E2E 测试集与防作弊取证审计 (Challenger 1&2 PASS，Forensic Auditor CLEAN)
+## Milestones
+- [x] M_ART_0: 美术资源与代码引用依赖探查 (Exploration)
+- [x] M_ART_1: 美术风格规范文档化 (`Design/Art_Style_Guide.md`)
+- [x] M_ART_2: 批量生成第一关卡美术素材 (主角、草地背景、Boss、5种小怪)
+- [x] M_ART_3: Python 抠图后处理 (转 RGBA 透明 PNG、背景适配、全量覆盖 Textures 目录)
+- [x] M_ART_4: Reviewer、Challenger 与 Auditor 终验审计，生成 `victory_report.md` 并向 Sentinel 汇报 Complete
+
+## Action Items
+1. [x] 派发 `teamwork_preview_explorer` (Phase 12 / M_ART_0) 进行 Textures 资源目录结构、尺寸规格与代码引用全量探查。
+2. [x] 派发 Worker 1 编写 `Design/Art_Style_Guide.md` (R1)。
+3. [x] 派发 Worker 1 批量生成素材 (R2) 并编写 Python Pillow 自动抠图与转换脚本覆盖 Textures 目录 (R3)。
+4. [x] 并行派发 Reviewer 1&2, Challenger 1&2 与 Forensic Auditor 进行三方终验与合规取证 (全量 APPROVE / PASS / CLEAN)。
 
 ## Acceptance Criteria Status
 - [x] 首次启动 8 段剧情顺序播放与跳过闭环
